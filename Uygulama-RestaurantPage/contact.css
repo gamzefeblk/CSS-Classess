@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: prgFont;
+    src: url(./Fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+.navbar{
+    background-color: coral;
+    color: blanchedalmond;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main{
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+.navbar-links ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar-links li{
+    list-style: none;
+
+}
+.navbar-links li a{
+    text-decoration: none;
+    padding: 2vw;
+    font-size: 1.5rem;
+    color: #DED9C4;
+    display: block; /*arka kutucuk haline getiriyor*/
+}
+
+.navbar-links li:hover {
+    background-color:coral;
+    border-radius: 15px;
+}
+
+.navbar-links li a:hover{
+    color:#42413A
+}
+#icon-navbar{
+    position: absolute;
+    right: 2vw;
+    top:2vh;
+    font-size: 1.5rem;
+    display: none;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+div.container h1{
+    color: coral;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+}
+div.container p{
+    margin: 20px;
+    text-align: justify;
+    font-size: 1.5rem;
+    font-family: prgFont;
+    margin-left:200px;
+    margin-right: 200px;
+    margin-bottom: 50px;
+}
+.name, .eMail, .tel,.message{
+    font-family: prgFont;
+    font-size: 1.5rem; 
+    margin: 10px;
+}
+.container input{
+    padding: 0.5rem;
+    background-color:floralwhite;
+    width: 300px;
+    height: 50px;
+}
+
+textarea{
+    background-color:floralwhite;
+    width: 300px;
+    height: 200px;
+}
+.bottom{
+    background-color: coral;
+    font-family: prgFont;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+@media screen and (max-width:760px) {
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .navbar-links ul{
+        flex-direction: column;
+        
+    }
+    .navbar-links{
+        width: 100%;
+    }
+}
+
+@media (max-width:600px) {
+    #icon-navbar{
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+    }
+}
